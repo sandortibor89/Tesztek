@@ -1,0 +1,98 @@
+{
+	"BTHExchangeRate": 17056.42524,
+	"Funds": {
+		"EDUCATIONAL": 1.056106863281458E7,
+		"HARD": -1.0153342152826635E10,
+		"OPERATIONAL": 1.0628295984799805E8
+	},
+	"Users": {
+		"0002e5026554ae6dc093fbc03190f402": {
+			"creationTime": 1546815060000,
+			"email": "TUTI@AZE.SK",
+			"id": "0002e5026554ae6dc093fbc03190f402",
+			"myCryptoCurrencies": {
+				"BTC": 0.00000001,
+				"BTH": 1,
+				"CC": 2,
+				"CH": 3,
+				"CN": 4,
+				"FRH": 800,
+				"HARD": 200
+			},
+			"myPromoCode": "AA9A70CD",
+			"name": "Cső Csaba",
+			"parent": "csaba@gmail.com",
+			"phoneNumber": "+36201234567",
+			"verification": {
+				"isPhoneVerified": true,
+				"lastPhoneNumberChange": 1547830566345,
+				"verificationCode": "112223"
+			},
+			"type": "user",
+			"verificationCode": "324698",
+			"inviter": {
+				"22c9f9276a16c04e9c59d1a181d062b1": true
+			},
+			"mentor": true,
+			"myPremiumFund": 200
+		},
+		"000827a011906e6f85c0003df773045d": {
+			"creationTime": 1524223320000,
+			"email": "janos@gmail.com",
+			"id": "000827a011906e6f85c0003df773045d",
+			"myCryptoCurrencies": {
+				"BTC": 0.1,
+				"BTH": 5,
+				"CC": 6,
+				"CH": 7,
+				"CN": 8,
+				"FRH": 830,
+				"HARD": 300
+			},
+			"myPromoCode": "283AD18D",
+			"name": "Ősz János",
+			"parent": "janos@gmail.com",
+			"phoneNumber": "+36301234567",
+			"type": "user",
+			"verificationCode": "234929",
+			"inviter": {
+				"0002e5026554ae6dc093fbc03190f402": true
+			},
+			"myPremiumFund": 200,
+			"invited": {
+				"47c3e5609a5bd48d5bc4bbc5e785351f": true,
+				"4788dcfe33df9298724807f5eea9bf25": true,
+				"3cabd332c060fb77f4ed7d5b02e316e4": true
+			},
+			"myTransactions": {
+				"-LUFNC21DeYreiRQP2IK": {
+					"createdAt": 1545389265184,
+					"from": "HARD",
+					"quantity": 10,
+					"received": "000827a011906e6f85c0003df773045d",
+					"sender": "f8a64cccb6b04fe68a7a5a5f228c1846",
+					"to": "FRH",
+					"blockChainCode": "000827a011906e6f85c0003df773045d;f8a64cccb6b04fe68a7a5a5f228c1846;-LUFNC21DeYreiRQP2IK;1545389265184;10;HARD;FRH"
+				},
+				"-LUFNCTcxnB421iG4Kmj": {
+					"createdAt": 1545389266947,
+					"from": "HARD",
+					"quantity": 10,
+					"received": "000827a011906e6f85c0003df773045d",
+					"sender": "f8a64cccb6b04fe68a7a5a5f228c1846",
+					"to": "FRH",
+					"blockChainCode": "000827a011906e6f85c0003df773045d;f8a64cccb6b04fe68a7a5a5f228c1846;-LUFNCTcxnB421iG4Kmj;1545389266947;10;HARD;FRH"
+				},
+				"-LUFNCi5kwTDRCS_NEYY": {
+					"createdAt": 1545389267935,
+					"from": "HARD",
+					"quantity": 10,
+					"received": "000827a011906e6f85c0003df773045d",
+					"sender": "f8a64cccb6b04fe68a7a5a5f228c1846",
+					"to": "FRH",
+					"blockChainCode": "000827a011906e6f85c0003df773045d;f8a64cccb6b04fe68a7a5a5f228c1846;-LUFNCi5kwTDRCS_NEYY;1545389267935;10;HARD;FRH"
+				}
+			}
+		}
+	}
+}

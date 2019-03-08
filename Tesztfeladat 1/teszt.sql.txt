@@ -1,0 +1,30 @@
+-- Adminer 4.7.1 MySQL dump
+
+SET NAMES utf8;
+SET time_zone = '+00:00';
+SET foreign_key_checks = 0;
+SET sql_mode = 'NO_AUTO_VALUE_ON_ZERO';
+
+DROP TABLE IF EXISTS `products`;
+CREATE TABLE `products` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(50) NOT NULL,
+  `inserted` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+DROP TABLE IF EXISTS `products_connects`;
+CREATE TABLE `products_connects` (
+  `id_1` int(10) unsigned NOT NULL,
+  `id_2` int(10) unsigned NOT NULL,
+  `inserted` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id_1`,`id_2`),
+  KEY `id_2` (`id_2`),
+  KEY `id_1` (`id_1`),
+  CONSTRAINT `products_connects_ibfk_3` FOREIGN KEY (`id_1`) REFERENCES `products` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT `products_connects_ibfk_4` FOREIGN KEY (`id_2`) REFERENCES `products` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+-- 2019-02-12 23:31:03
