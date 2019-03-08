@@ -19,7 +19,7 @@ class CoffeeMachine {
     {
         echo "Welcome to CoffeeMachine!\n\n";
         // Ezt ird at, hogy egy espresso ara legyen a minimum
-        echo "Please give me at least 300 Fabatkas\n\n";
+        echo "Please give me at least ".Espresso::COST." Fabatkas\n\n";
     }
 
     public function pay($money)
