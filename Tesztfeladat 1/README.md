@@ -1,4 +1,4 @@
-# Tesztfeladat
+# Tesztfeladat 1
 
 Maga a feladat a converter.php-ben található.
 
