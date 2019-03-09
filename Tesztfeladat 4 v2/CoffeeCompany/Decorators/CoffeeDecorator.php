@@ -10,8 +10,7 @@ namespace CoffeeCompany\Decorators;
 
 use CoffeeCompany;
 
-abstract class CoffeeDecorator extends CoffeeCompany\Coffee
-{
+abstract class CoffeeDecorator extends CoffeeCompany\Coffee {
 // Abstract decorator class - note that it extends Coffee abstract class
     protected $decoratedCoffee = "";
     protected $ingredientSeparator = ", ";

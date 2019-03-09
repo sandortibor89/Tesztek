@@ -3,16 +3,16 @@
  * Created by PhpStorm.
  * User: gezamiklo
  * Date: 05/11/14
- * Time: 17:50
+ * Time: 15:26
  */
 
 namespace CoffeeCompany\Decorators;
 
 use CoffeeCompany;
 
-class CoffeeWithSugar extends CoffeeDecorator {
+class CoffeeWithMilk extends CoffeeDecorator{
 
-    const EXTRA_COST = 5;
+    const EXTRA_COST = 30;
 
     public function __construct(CoffeeCompany\Coffee $decoratedCoffee) {
         parent::__construct($decoratedCoffee);
@@ -25,6 +25,8 @@ class CoffeeWithSugar extends CoffeeDecorator {
 
     public function getIngredients()
     {
-        return parent::getIngredients() . ", Sugar";
+			$ingredients = parent::getIngredients();
+			array_push($ingredients, "Milk");
+      return $ingredients;
     }
 }
